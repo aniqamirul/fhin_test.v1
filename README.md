@@ -1,2 +1,2 @@
-# fhin_test.v1
+# fhin_test
 FHIN testing
