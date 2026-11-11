@@ -1,138 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>FHIN Auto Spa</title>
 
-    <style>
+<title>FHIN Auto Spa</title>
 
-        body{
-            font-family: Arial;
-            background-color: #f4f4f4;
-            margin:0;
-            padding:20px;
-        }
+<style>
 
-        h1{
-            color:#1f2937;
-        }
+body{
+    background:#0f3d2e;
+    font-family:Arial;
+    margin:0;
+    padding:20px;
+    color:white;
+}
 
-        .container{
-            display:flex;
-            gap:20px;
-        }
+.header{
+    background:#14532d;
+    padding:20px;
+    border-radius:10px;
+}
 
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-            flex:1;
-        }
+h1{
+    color:#f97316;
+}
 
-        input, select{
-            width:100%;
-            padding:10px;
-            margin-top:5px;
-            margin-bottom:15px;
-        }
+.container{
+    display:flex;
+    gap:20px;
+    margin-top:20px;
+}
 
-        button{
-            background:#2563eb;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            border-radius:5px;
-            cursor:pointer;
-        }
+.card{
+    background:#1b4332;
+    padding:20px;
+    border-radius:10px;
+    flex:1;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
 
-        table{
-            width:100%;
-            border-collapse:collapse;
-        }
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
 
-        table, th, td{
-            border:1px solid #ddd;
-        }
+button{
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
 
-        th, td{
-            padding:10px;
-        }
+button:hover{
+    background:#ea580c;
+}
 
-        th{
-            background:#2563eb;
-            color:white;
-        }
+table{
+    width:100%;
+    border-collapse:collapse;
+}
 
-    </style>
+th{
+    background:#f97316;
+    padding:10px;
+}
+
+td{
+    background:#2d6a4f;
+    padding:10px;
+}
+
+</style>
+
 </head>
-
-<p>Azraqs, Terrans and Sonions were here 🚀</p>
 
 <body>
 
-<h1>🚗 FHIN Auto Spa System</h1>
+<div class="header">
+
+<h1>🚗 FHIN AUTO SPA</h1>
+
+<p>Customer Management System</p>
+
+</div>
 
 <div class="container">
 
-    <div class="card">
+<div class="card">
 
-        <h2>New Visit Entry</h2>
+<h2>New Visit</h2>
 
-        <label>Plate Number</label>
-        <input type="text" placeholder="ABC1234">
+<input placeholder="Plate Number">
 
-        <label>Vehicle Size</label>
-        <select>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-        </select>
+<select>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
 
-        <label>Service</label>
-        <select>
-            <option>Normal Wash</option>
-            <option>Premium Spa</option>
-            <option>Exclusive Spa</option>
-            <option>Diamond Polish</option>
-        </select>
+<input placeholder="Amount">
 
-        <label>Amount</label>
-        <input type="number">
+<button>
+Submit Visit
+</button>
 
-        <button>
-            Submit Visit
-        </button>
+</div>
 
-    </div>
+<div class="card">
 
-    <div class="card">
+<h2>Customer Search</h2>
 
-        <h2>Search Customer</h2>
+<input placeholder="Search Plate">
 
-        <input type="text"
-        placeholder="Search Plate Number">
+<button>
+Search
+</button>
 
-        <button>
-            Search
-        </button>
-
-        <br><br>
-
-        <h3>Customer Result</h3>
-
-        <p>
-            Plate: VPF 71
-        </p>
-
-        <p>
-            Visits: 6
-        </p>
-
-        <p>
-            Total Spend: RM195
-        </p>
-
-    </div>
+</div>
 
 </div>
 
@@ -140,29 +131,23 @@
 
 <div class="card">
 
-    <h2>Visit Records</h2>
+<h2>Visit Records</h2>
 
-    <table>
+<table>
 
-        <tr>
-            <th>Date</th>
-            <th>Plate</th>
-            <th>Amount</th>
-        </tr>
+<tr>
+<th>Date</th>
+<th>Plate</th>
+<th>Amount</th>
+</tr>
 
-        <tr>
-            <td>01/10/2026</td>
-            <td>VPF 71</td>
-            <td>RM25</td>
-        </tr>
+<tr>
+<td>01/10/2026</td>
+<td>VPF 71</td>
+<td>RM25</td>
+</tr>
 
-        <tr>
-            <td>01/10/2026</td>
-            <td>APF 71</td>
-            <td>RM35</td>
-        </tr>
-
-    </table>
+</table>
 
 </div>
 
